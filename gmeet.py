@@ -1,4 +1,6 @@
-def open_gmeet(gmeet_code):
+
+
+def open_gmeet(gmeet_code,email,password):
 
     from selenium import webdriver
     from selenium.webdriver.common.keys import Keys
@@ -36,9 +38,6 @@ def open_gmeet(gmeet_code):
     driver.get('https://accounts.google.com/o/oauth2/auth/identifier?client_id=717762328687-iludtf96g1hinl76e4lc1b9a82g457nn.apps.googleusercontent.com&scope=profile%20email&redirect_uri=https%3A%2F%2Fstackauth.com%2Fauth%2Foauth2%2Fgoogle&state=%7B%22sid%22%3A1%2C%22st%22%3A%2259%3A3%3Abbc%2C16%3A8761f44b2df242a2%2C10%3A1605194839%2C16%3Aa5c0f97ced3a97a0%2Cd6e1862c7d914c10f6439ba9b16cdacfc72fa9b10b30b7638c85ccda496f2a69%22%2C%22cdl%22%3Anull%2C%22cid%22%3A%22717762328687-iludtf96g1hinl76e4lc1b9a82g457nn.apps.googleusercontent.com%22%2C%22k%22%3A%22Google%22%2C%22ses%22%3A%22568af41449fc46548320092241478f27%22%7D&response_type=code&flowName=GeneralOAuthFlow')
     code = str(gmeet_code)
 
-
-    email = "23786@apsrkpuram.edu.in"
-    password = "9382084913@Swapnilt"
 
         #entering email
     email_login = driver.find_element_by_xpath('//*[@id="identifierId"]') 
